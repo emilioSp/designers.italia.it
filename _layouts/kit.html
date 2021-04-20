@@ -3,23 +3,28 @@ layout: default
 ---
 
 {% include setlang.html %}
+{% assign title = page.title %}
+{% assign subtitle = page.subtitle %}
+{% assign textChunk1 = page.textChunk1 %}
+{% assign textChunk2 = page.textChunk2 %}
+{% assign textChunk3 = page.textChunk3 %}
 
 <article class="Prose u-color-grey-60">
   <div class="u-layout-r-withGutter u-padding-r-top u-padding-r-bottom">
     <div class="Grid Grid--alignCenter u-padding-all-l">
       <div class="Grid-cell u-size6of12 u-color-50">
         <h1 class="u-text-r-xs u-margin-bottom-s">Kit</h1>
-        <h1 class="u-text-h2">Architettura dell'informazione</h1>
+        <h1 class="u-text-h2">{{title}}</h1>
         <div class="u-text-r-m">
-          Sottotitolo che contestualizzi questo kit per cosa lo usiamo e dove, frase chiave contestualizzare in tre righe al massimo deve capirsi
+          {{subtitle}}
         </div>
       </div>
     </div>
     <div class="Grid Grid--alignCenter u-padding-all-l">
       <div class="Grid-cell u-before3of12 u-size6of12">
-        <h4 class="u-padding-bottom-s">A COSA SERVE</h4>
+        <h3 class="u-text-h6">{{textChunk1.title}}</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Et ipsum est iaculis scelerisque mollis at. Cursus facilisis amet nunc lobortis sagittis. Etiam quam diam ipsum dignissim. Proin ac nascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor.
+          {{textChunk1.text}}
         </p>
       </div>
       <div class="Grid-cell u-before1of12 u-size2of12">
@@ -29,17 +34,15 @@ layout: default
           <div class="u-margin-bottom-xs">Redattore</div>
           <div class="u-margin-bottom-xs">Esperto UX</div>
         </div>
-        <h4 class="u-padding-bottom-s">LINEE GUIDA</h4>
+        <h3 class="u-padding-bottom-s">LINEE GUIDA</h3>
         <div class="u-margin-bottom-xs">Content design</div>
       </div>
     </div>
+
     <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-background-50 u-color-white u-padding-all-m u-size6of12">
-        COL-6
-        Cose da fare
+      <div class="Grid-cell u-size6of12">
+        <h3 class="u-text-h6">COSE DA FARE</h3>
       </div>
-    </div>
-    <div class="Grid Grid--alignCenter u-padding-all-l">
       <div class="Grid-cell u-size10of12 u-borderShadow-l">
         <div class="Accordion fr-accordion js-fr-accordion u-padding-all-l" id="accordion-0">
           <div class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-0">
@@ -122,42 +125,43 @@ layout: default
     </div>
 
 
-
     <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-size10of12 u-borderShadow-l">
-        <div class="Accordion fr-accordion js-fr-accordion" id="accordion-2">
-          <h2 class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-2">
-            <span class="Accordion-link">Tempore voluptatem ut aut.</span>
-          </h2>
-          <div id="accordion-panel-2" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel">
-            <p class="u-layout-prose u-color-grey-90 u-text-p u-padding-r-all">Ex omnis rerum saepe quibusdam facilis rerum. Officiis perspiciatis est rerum harum consequatur et debitis molestiae illum. Aut omnis tenetur sed repellendus autem eos. Qui sed vitae aut explicabo et ad sit. Qui consequatur sunt. Iusto ad officiis
-              sunt.</p>
-
-          </div>
-        </div>
+      <div class="Grid-cell u-before3of12 u-size6of12">
+        <h3 class="u-padding-bottom-s">{{textChunk2.title}}</h3>
+        <p>
+          {{textChunk2.text}}
+        </p>
+      </div>
+      <div class="Grid-cell u-before1of12 u-size2of12">
       </div>
     </div>
-    <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-background-50 u-color-white u-padding-all-m u-size6of12">
-        COL-6
-        Tutorial
-      </div>
-    </div>
+
+
     <div class="Grid Grid--alignCenter u-padding-all-l">
       <div class="Grid-cell u-background-50 u-color-white u-padding-all-m u-size6of12">
         COL-6
         Video Tutorial
       </div>
     </div>
+
     <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-background-50 u-color-white u-padding-all-m u-before3of12 u-size6of12">
-        COL-6
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Et ipsum est iaculis scelerisque mollis at. Cursus facilisis amet nunc lobortis sagittis. Etiam quam diam ipsum dignissim. Proin ac nascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor.
+      <div class="Grid-cell u-before3of12 u-size6of12">
+        <h3 class="u-padding-bottom-s">{{textChunk3.title}}</h3>
+        <p>
+          {{textChunk3.text}}
+        </p>
       </div>
-      <div class="Grid-cell u-background-50 u-color-white u-padding-all-m u-before1of12 u-size2of12">
-        COL-2
-        Kit correlati
+      <div class="Grid-cell u-before1of12 u-size2of12">
+        <div class="u-margin-bottom-xxl">
+          <h4 class="u-padding-bottom-xs">PROFESSIONALITÀ</h4>
+          <div class="u-margin-bottom-xs">Content designer</div>
+          <div class="u-margin-bottom-xs">Redattore</div>
+          <div class="u-margin-bottom-xs">Esperto UX</div>
+        </div>
+        <h4 class="u-padding-bottom-s">LINEE GUIDA</h4>
+        <div class="u-margin-bottom-xs">Content design</div>
       </div>
     </div>
+
   </div>
 </article>
