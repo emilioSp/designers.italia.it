@@ -40,3 +40,23 @@ $(function() {
   });
 
 })
+
+$(document).ready(function() {
+  $('.fr-accordion__header').on('click', function(e) {
+    const accordionHeaderText = $(this).find('[data-accordion-header-text]');
+    if (accordionHeaderText.hasClass('accordion-line-clamp')) {
+      accordionHeaderText.removeClass('accordion-line-clamp');
+    } else {
+      accordionHeaderText.addClass('accordion-line-clamp');
+    }
+
+    const expandButton = $(this).find('[data-accordion-expanded]');
+    if (expandButton.attr('data-accordion-expanded') === "false") {
+      expandButton.attr('data-accordion-expanded', true);
+      expandButton.html('-');
+    } else {
+      expandButton.attr('data-accordion-expanded', false);
+      expandButton.html('+');
+    }
+  })
+});
