@@ -53,10 +53,10 @@ $(document).ready(function() {
     const expandButton = $(this).find('[data-accordion-expanded]');
     if (expandButton.attr('data-accordion-expanded') === "false") {
       expandButton.attr('data-accordion-expanded', true);
-      expandButton.html('-');
+      expandButton.find('img').attr('src', '/assets/images/icons/icon-more-blue.png');
     } else {
       expandButton.attr('data-accordion-expanded', false);
-      expandButton.html('+');
+      expandButton.find('img').attr('src', '/assets/images/icons/icon-more-blue-h.png');
     }
   })
 });
