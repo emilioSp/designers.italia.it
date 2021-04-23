@@ -8,6 +8,8 @@ layout: default
 {% assign textChunk1 = page.textChunk1 %}
 {% assign textChunk2 = page.textChunk2 %}
 {% assign textChunk3 = page.textChunk3 %}
+{% assign tagsSection = page.tagsSection %}
+{% assign relatedKits = page.relatedKits %}
 {% assign superAccordion = page.superAccordion %}
 
 <article class="Prose u-color-grey-60">
@@ -30,13 +32,13 @@ layout: default
       </div>
       <div class="Grid-cell u-before1of12 u-size2of12">
         <div class="u-margin-bottom-xxl">
-          <h4 class="u-padding-bottom-xs">PROFESSIONALITÀ</h4>
-          <div class="u-margin-bottom-xs">Content designer</div>
-          <div class="u-margin-bottom-xs">Redattore</div>
-          <div class="u-margin-bottom-xs">Esperto UX</div>
+          <div class="u-text-h6">{{tagsSection.title}}</div>
+          <ul>
+            {% for tag in tagsSection.tags %}
+              <li class="u-margin-bottom-xs u-textWeight-600">{{tag}}</li>
+            {% endfor %}
+          </ul>
         </div>
-        <h3 class="u-padding-bottom-s">LINEE GUIDA</h3>
-        <div class="u-margin-bottom-xs">Content design</div>
       </div>
     </div>
 
@@ -115,13 +117,13 @@ layout: default
       </div>
       <div class="Grid-cell u-before1of12 u-size2of12">
         <div class="u-margin-bottom-xxl">
-          <h4 class="u-padding-bottom-xs">PROFESSIONALITÀ</h4>
-          <div class="u-margin-bottom-xs">Content designer</div>
-          <div class="u-margin-bottom-xs">Redattore</div>
-          <div class="u-margin-bottom-xs">Esperto UX</div>
+          <div class="u-text-h6">{{relatedKits.title}}</div>
+          <ul>
+            {% for kit in relatedKits.kits %}
+            <li class="u-margin-bottom-xs u-textWeight-600">{{kit}}</li>
+            {% endfor %}
+          </ul>
         </div>
-        <h4 class="u-padding-bottom-s">LINEE GUIDA</h4>
-        <div class="u-margin-bottom-xs">Content design</div>
       </div>
     </div>
 

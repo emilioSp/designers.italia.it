@@ -17,6 +17,19 @@ textChunk3:
   title: ALTRO PARAGRAFO
   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Et ipsum est iaculis scelerisque mollis at. Cursus facilisis amet nunc lobortis sagittis. Etiam quam diam ipsum dignissim. Proin ac nascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor.
 
+tagsSection:
+  title: PROFESSIONALITÀ
+  tags:
+    - Content designer
+    - Redattore
+    - Esperto UX
+
+relatedKits:
+  title: KIT CORRELATI
+  kits:
+    - <a href='#'>Privacy by design</a>
+    - <a href='#'>Interfaccia utente</a>
+
 superAccordion:
   title: COSE DA FARE
   accordions:
