@@ -4,8 +4,10 @@ subtitle: Sottotitolo che contestualizzi questo kit per cosa lo usiamo e dove, f
 lang: it
 layout: kit
 description: "Design del sito di una scuola: template HTML"
+backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
+backgroundColor: "#439af1"
 nodate: true
-kitcategory: scuole
+kitcategory: ideare
 
 textChunk1:
   title: A COSA SERVE
