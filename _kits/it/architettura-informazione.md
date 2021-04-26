@@ -59,4 +59,10 @@ superAccordion:
           text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Et ipsum est iaculis scelerisque mollis at. Cursus facilisis amet nunc lobortis sagittis.
         - title: ISTRUZIONI
           text: Prima di iniziare a coinvolgere i partecipanti definisci un piano di massima per assicurarti di andare nella giusta direzione durante le sessioni, e poter elaborare risultati utili all’obiettivo della ricerca.
+
+tags:
+  - navigation-tree
+  - information-architecture
+  - human-centered-design
+  - navigation
 ---

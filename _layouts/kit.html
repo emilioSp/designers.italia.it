@@ -126,5 +126,8 @@ layout: default
 
   </div>
 
-  NEWS QUI
+  {% if page.tags != nil %}
+    {% include relatedspost.html pagetags=page.tags %}
+  {% endif %}
+
 </article>
